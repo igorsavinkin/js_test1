@@ -30,3 +30,14 @@ function findEmployeeById(employeeId) {
       document.getElementById('employeesDetails').innerHTML = 'no employee has been found with this ID';
      }
  }
+
+ function findEmployeeBySalary(salaryMin, salaryMax) {
+    const filteredEmployee = employees.filter(employee => salaryMin <= employee.salary && salaryMax >= employee.salary );
+    if (filteredEmployee) {
+        const EmployeesDisplay = filteredEmployee.map((employee, index) => `<p>${employee.id}: ${employee.name}: ${employee.name} - ${employee.department} - $${employee.salary}</p>`).join('');
+        document.getElementById('employeesDetails').innerHTML =  EmployeesDisplay;
+    }
+    else{
+      document.getElementById('employeesDetails').innerHTML = 'no employee has been found with salaries between ' + `${salaryMin} and ${salaryMax}`;
+     }
+ }
