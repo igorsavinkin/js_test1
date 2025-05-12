@@ -11,21 +11,21 @@ function performOperation() {
         // Display the result
         displayResult(result);
     } else {
-        displayResult('Please enter valid numbers');
+        displayResult(['Please enter valid numbers']);
     }
 }
 
 function multiply(a, b) {
     // Introduce a debugger statement to pause execution
     debugger;
-
+    
     // Multiply the numbers
-    return a * b;
+    return [a * b , a + b, a - b,  b!=0 ? a/b : "one can't divide to zero"];
 }
 
 function displayResult(result) {
     // Display the result in the paragraph element
     const resultElement = document.getElementById('result');
-    resultElement.textContent = `The result is: ${result}`;
+    resultElement.textContent = `The result is: ${result.join(" ")}`;
 }
         
