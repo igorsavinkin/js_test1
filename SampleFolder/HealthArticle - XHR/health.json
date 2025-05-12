@@ -1,0 +1,29 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "Exploring the Mysteries of the Universe",
+      "description": "An in-depth look into the latest discoveries in astrophysics and space exploration."
+    },
+    {
+      "id": 2,
+      "title": "The Future of Artificial Intelligence",
+      "description": "A comprehensive analysis of how AI is shaping our world and what to expect in the coming years."
+    },
+    {
+      "id": 3,
+      "title": "Healthy Eating Habits",
+      "description": "Tips and tricks for maintaining a balanced diet and leading a healthier lifestyle."
+    },
+    {
+      "id": 4,
+      "title": "Travel Destinations for 2024",
+      "description": "A curated list of must-visit locations for your next adventure."
+    },
+    {
+      "id": 5,
+      "title": "The Evolution of Music",
+      "description": "Tracing the history of music and how digital technology is transforming the industry."
+    }
+  ]
+}
